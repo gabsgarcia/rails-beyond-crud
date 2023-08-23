@@ -1,0 +1,10 @@
+<h1> Restaurantes 5 ⭐</h1>
+
+<ol>
+  <% @restaurants.each do |restaurant| %>
+    <%= render restaurant %>
+    <p>
+      <%= link_to "Mostre esse restaurante", restaurant %>
+    </p>
+  <% end %>
+</ol> 
